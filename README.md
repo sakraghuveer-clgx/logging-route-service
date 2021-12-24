@@ -44,4 +44,6 @@ Example:
 ```sh
 cf set-env logging-route-service SKIP_SSL_VALIDATION true
 cf restart logging-route-service
+cf create-user-provided-service SERVICE-INSTANCE -r ROUTE-SERVICE-URL cf bind-route-service DOMAIN SERVICE-INSTANCE [--hostname HOSTNAME]
+cf bind-route-service DOMAIN SERVICE-INSTANCE [--hostname HOSTNAME]
 ```
